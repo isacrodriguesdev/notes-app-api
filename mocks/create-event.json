@@ -1,0 +1,8 @@
+{
+  "body": "{\"content\":\"galera\",\"attachment\":\"outro.jpg\"}",
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "979e2ee0-2906-40e2-9c6d-6e2aa447de88"
+    }
+  }
+}
