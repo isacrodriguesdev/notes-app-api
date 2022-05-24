@@ -14,7 +14,7 @@ Resources:
           ProviderName:
             Fn::GetAtt: ["CognitoUserPool", "ProviderName"]
 
-    # IAM roles
+  # IAM roles
   CognitoIdentityPoolRoles:
     Type: AWS::Cognito::IdentityPoolRoleAttachment
     Properties:
