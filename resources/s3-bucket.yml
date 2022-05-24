@@ -2,7 +2,7 @@ Resources:
   AttachmentsBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: clickfiscal-notes-app-uploads
+      BucketName: ${self:custom.stage}-notes-uploads
       # Set the CORS policy
       CorsConfiguration:
         CorsRules:

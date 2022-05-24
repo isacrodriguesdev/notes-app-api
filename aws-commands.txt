@@ -1,0 +1,14 @@
+
+# DEV
+aws cognito-idp admin-set-user-password \
+  --user-pool-id us-east-1_Kildr8Wh2 \
+  --username isacrodriguesdev@protonmail.com \
+  --password @DemoAWS10 \
+  --permanent
+
+# PROD
+aws cognito-idp admin-set-user-password \
+  --user-pool-id us-east-1_Kildr8Wh2 \
+  --username isacrodriguesdev@protonmail.com \
+  --password @DemoAWS10 \
+  --permanent
