@@ -42,12 +42,12 @@ provider:
       # the specific table for the stage
       Resource: "arn:aws:dynamodb:us-east-1:*:*"
 
-    # - Effect: Allow
-    #   Action:
-    #     - s3:PutObject
-    #     - s3:GetObject
-    #     - s3:DeleteObject
-    #   Resource: "arn:aws:s3:::${self:custom.stage}-notes-app-storage/*"
+    - Effect: Allow
+      Action:
+        - s3:PutObject
+        - s3:GetObject
+        - s3:DeleteObject
+      Resource: "arn:aws:s3:::${self:custom.stage}-notes-app-storage/*"
 
 functions:
   create:
