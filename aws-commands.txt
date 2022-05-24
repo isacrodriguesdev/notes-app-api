@@ -8,7 +8,7 @@ aws cognito-idp admin-set-user-password \
 
 # PROD
 aws cognito-idp admin-set-user-password \
-  --user-pool-id us-east-1_Kildr8Wh2 \
+  --user-pool-id us-east-1_j879e3fSf \
   --username isacrodriguesdev@protonmail.com \
   --password @DemoAWS10 \
   --permanent
