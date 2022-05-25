@@ -12,3 +12,5 @@ aws cognito-idp admin-set-user-password \
   --username isacrodriguesdev@protonmail.com \
   --password @DemoAWS10 \
   --permanent
+
+aws cognito-idp admin-update-user-attributes --user-pool-id us-east-1_Kildr8Wh2 --username 5ae98d72-b780-4972-887c-6cb2a9c75d94 --user-attributes Name="email_verified",Value="true"
