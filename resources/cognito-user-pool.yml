@@ -20,6 +20,21 @@ Resources:
       ExplicitAuthFlows:
         - ADMIN_NO_SRP_AUTH
       GenerateSecret: false
+      CallbackURLs:
+        - https://main--isacrodriguesdev-notes.netlify.app/
+      LogoutURLs:
+        - https://main--isacrodriguesdev-notes.netlify.app/
+      AllowedOAuthFlowsUserPoolClient: true
+      AllowedOAuthFlows:
+        - implicit
+      AllowedOAuthScopes:
+        - openid
+        - profile
+        - aws.cognito.signin.user.admin
+        - email
+        - phone
+      SupportedIdentityProviders:
+        - Facebook
 
   UserPoolIdentityProvider:
     Type: AWS::Cognito::UserPoolIdentityProvider
