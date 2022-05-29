@@ -21,6 +21,19 @@ Resources:
         - ADMIN_NO_SRP_AUTH
       GenerateSecret: false
 
+  UserPoolIdentityProvider:
+    Type: AWS::Cognito::UserPoolIdentityProvider
+    Properties:
+      UserPoolId: !Ref CognitoUserPool
+      ProviderName: "Facebook"
+      ProviderDetails:
+        client_id: "1279966899199659"
+        client_secret: "b27e3d17c1e510b5a172b42c17546841"
+        authorize_scopes: "public_profile,email"
+      ProviderType: "Facebook"
+      AttributeMapping:
+        email: "email"
+
 # Print out the Id of the User Pool that is created
 Outputs:
   UserPoolId:
